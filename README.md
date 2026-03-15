@@ -9,40 +9,46 @@ The application is deployed and accessible via Google Cloud Run:
 
 ## 🛠️ Technology Stack
 
-- **Framework**: [Next.js](https://nextjs.org) (App Router)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com)
-- **Runtime**: [Node.js](https://nodejs.org)
-- **Deployment**: [Google Cloud Run](https://cloud.google.com/run)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Framework**: [Next.js 15](https://nextjs.org) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com) (Modern Sidebar Architecture)
+- **Runtime**: [Node.js 20+](https://nodejs.org)
+- **Deployment**: [Google Cloud Run](https://cloud.google.com/run) (Automated CI/CD)
+- **Language**: [TypeScript 5](https://www.typescriptlang.org/)
+
+## 🎨 UI & Aesthetics
+
+The Hub features a professional, high-fidelity sidebar-based layout designed for mission-critical system monitoring:
+- **Premium Gradients**: Precise `blue-400` to `emerald-400` title aesthetics.
+- **Deterministic Sidebar**: Pinned navigation and branding for centralized cluster control.
+- **Integrated Socials**: Linked LinkedIn, GitHub, and YouTube profiles for deep-tech connectivity.
 
 ## 📖 Getting Started
 
 ### Local Development
 
-First, install the dependencies:
-
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-Then, run the development server:
-
+2. Run the development server:
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ### Build and Deployment
 
-To create a production build:
+**Automated CI/CD:**
+The project is configured with GitHub Actions. Any push to the `main` branch triggers an automated build and deployment to Google Cloud Run.
 
+**Manual Production Build:**
+To create a production build locally:
 ```bash
 npm run build
 ```
 
-The project is configured for containerized deployment. Ensure your Docker environment is set up for Google Cloud Artifact Registry to deploy updates.
+The site is optimized with custom `Cache-Control` headers to ensure rapid delivery of the high-fidelity UI.
 
 ## 🌐 Vision
 
-The Hub aims to bridge the gap between high-fidelity simulations and physical hardware, providing a unified interface for Level 5 (L5) reliability in autonomous systems.
+The Nexus Hub bridges the gap between high-fidelity digital twin simulations and safe, agentic actuation in real-world environments, providing a deterministic "operating system" for autonomous aerospace and defense architectures.
