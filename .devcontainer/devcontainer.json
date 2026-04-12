@@ -1,0 +1,22 @@
+{
+    "name": "Cyber-Physical Hub Sandbox (Node 20)",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    
+    // Automatically punch the Next.js renderer through the security boundary
+    "forwardPorts": [3000],
+    
+    // Mechanize package creation deterministically upon launch
+    "postCreateCommand": "npm install",
+    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "bradlc.vscode-tailwindcss"
+            ]
+        }
+    }
+}
